@@ -1,0 +1,844 @@
+[
+  {
+    "cluster_id": 0,
+    "source_coarse_cluster_id": 2,
+    "size": 4,
+    "beliefs": [
+      {
+        "belief_id": "1_0",
+        "question_id": 1,
+        "belief": "Dribble moves must be practiced at game speed to be effective."
+      },
+      {
+        "belief_id": "5_2",
+        "question_id": 5,
+        "belief": "Dynamic movement drills are essential for applying skills in real game situations."
+      },
+      {
+        "belief_id": "28_0",
+        "question_id": 28,
+        "belief": "Practicing at game speed is essential for skill transfer to real games."
+      },
+      {
+        "belief_id": "28_1",
+        "question_id": 28,
+        "belief": "Intensity during practice must match game conditions for effective improvement."
+      }
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "source_coarse_cluster_id": 2,
+    "size": 4,
+    "beliefs": [
+      {
+        "belief_id": "14_0",
+        "question_id": 14,
+        "belief": "Practicing at game speed helps players become comfortable in high-pressure situations."
+      },
+      {
+        "belief_id": "14_1",
+        "question_id": 14,
+        "belief": "Movement under game conditions allows for better skill application during actual games."
+      },
+      {
+        "belief_id": "18_0",
+        "question_id": 18,
+        "belief": "Game-like reps enhance the application of perfect mechanics under pressure."
+      },
+      {
+        "belief_id": "18_1",
+        "question_id": 18,
+        "belief": "High intensity in practice simulates real-game conditions for skill retention."
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "source_coarse_cluster_id": 2,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "16_0",
+        "question_id": 16,
+        "belief": "Fundamentals improve through focused individual drills."
+      },
+      {
+        "belief_id": "17_0",
+        "question_id": 17,
+        "belief": "Mastery of a few drills leads to better application in game situations."
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "source_coarse_cluster_id": 2,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "5_0",
+        "question_id": 5,
+        "belief": "Static drills limit the ability to handle the ball under pressure."
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "source_coarse_cluster_id": 2,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "14_2",
+        "question_id": 14,
+        "belief": "Training in uncomfortable environments builds confidence and adaptability in players."
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "source_coarse_cluster_id": 2,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "16_1",
+        "question_id": 16,
+        "belief": "Live 1-on-1 situations allow players to apply skills in real scenarios."
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "source_coarse_cluster_id": 2,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "18_2",
+        "question_id": 18,
+        "belief": "Perfect mechanics are only valuable when practiced in a game-like context."
+      }
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "source_coarse_cluster_id": 3,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "7_0",
+        "question_id": 7,
+        "belief": "Shooting allows players to contribute without needing advanced dribbling or finishing skills."
+      },
+      {
+        "belief_id": "7_1",
+        "question_id": 7,
+        "belief": "A strong shooting ability creates scoring opportunities even in limited roles."
+      },
+      {
+        "belief_id": "9_2",
+        "question_id": 9,
+        "belief": "Effective shooting allows players to score without relying on ball handling."
+      }
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "4_2",
+        "question_id": 4,
+        "belief": "Using floaters and creating space can help mitigate shot-blocking risks."
+      }
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "7_2",
+        "question_id": 7,
+        "belief": "The modern game values shooting as a critical skill for success."
+      }
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "9_0",
+        "question_id": 9,
+        "belief": "Consistent shooting from distance creates immediate scoring threats."
+      }
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "9_1",
+        "question_id": 9,
+        "belief": "Shooting ability directly translates to higher point totals."
+      }
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "19_0",
+        "question_id": 19,
+        "belief": "Effective shooting creates scoring opportunities by drawing defenders."
+      }
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "19_1",
+        "question_id": 19,
+        "belief": "Shooting from deep allows shorter players to drive more effectively."
+      }
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "19_2",
+        "question_id": 19,
+        "belief": "Driving is challenging for smaller players without strong shooting skills."
+      }
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "24_0",
+        "question_id": 24,
+        "belief": "Defender spacing indicates whether to shoot or drive."
+      }
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "source_coarse_cluster_id": 3,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "24_2",
+        "question_id": 24,
+        "belief": "Flat-footed defenders are more vulnerable to shooting opportunities."
+      }
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "source_coarse_cluster_id": 6,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "10_0",
+        "question_id": 10,
+        "belief": "Flashy moves are valuable only if they effectively create separation from defenders."
+      },
+      {
+        "belief_id": "10_2",
+        "question_id": 10,
+        "belief": "Success with flashy moves depends on the player's ability to utilize them in real game situations."
+      },
+      {
+        "belief_id": "15_2",
+        "question_id": 15,
+        "belief": "Advanced dribble moves do not provide value if basic control is lacking."
+      }
+    ]
+  },
+  {
+    "cluster_id": 18,
+    "source_coarse_cluster_id": 6,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "11_0",
+        "question_id": 11,
+        "belief": "Explosiveness is crucial for beating defenders off the dribble."
+      },
+      {
+        "belief_id": "23_1",
+        "question_id": 23,
+        "belief": "Explosiveness is crucial for attacking defenders effectively."
+      }
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "source_coarse_cluster_id": 6,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "23_0",
+        "question_id": 23,
+        "belief": "Effective dribbling must lead to creating separation from defenders."
+      },
+      {
+        "belief_id": "23_2",
+        "question_id": 23,
+        "belief": "Simply performing dribble moves without purpose does not help in getting past defenders."
+      }
+    ]
+  },
+  {
+    "cluster_id": 20,
+    "source_coarse_cluster_id": 6,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "11_2",
+        "question_id": 11,
+        "belief": "Effective footwork allows players to create separation without relying on complex moves."
+      }
+    ]
+  },
+  {
+    "cluster_id": 21,
+    "source_coarse_cluster_id": 6,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "25_0",
+        "question_id": 25,
+        "belief": "No dribble move is guaranteed to work every time against a defender."
+      }
+    ]
+  },
+  {
+    "cluster_id": 22,
+    "source_coarse_cluster_id": 6,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "25_2",
+        "question_id": 25,
+        "belief": "Counter moves enhance the effectiveness of initial dribble attempts."
+      }
+    ]
+  },
+  {
+    "cluster_id": 23,
+    "source_coarse_cluster_id": 6,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "26_0",
+        "question_id": 26,
+        "belief": "Attacking the defender's hip increases the chances of beating them off the dribble."
+      }
+    ]
+  },
+  {
+    "cluster_id": 24,
+    "source_coarse_cluster_id": 6,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "26_1",
+        "question_id": 26,
+        "belief": "Physicality and athleticism are crucial for successfully driving through defenders."
+      }
+    ]
+  },
+  {
+    "cluster_id": 25,
+    "source_coarse_cluster_id": 8,
+    "size": 4,
+    "beliefs": [
+      {
+        "belief_id": "17_2",
+        "question_id": 17,
+        "belief": "Fundamental skills are essential for effective basketball performance."
+      },
+      {
+        "belief_id": "20_1",
+        "question_id": 20,
+        "belief": "Shooting and dribbling form are foundational skills that need mastery."
+      },
+      {
+        "belief_id": "21_0",
+        "question_id": 21,
+        "belief": "Mastering basic skills is essential for long-term success in basketball."
+      },
+      {
+        "belief_id": "21_1",
+        "question_id": 21,
+        "belief": "Strong ball control and dribbling are foundational to effective play."
+      }
+    ]
+  },
+  {
+    "cluster_id": 26,
+    "source_coarse_cluster_id": 8,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "1_1",
+        "question_id": 1,
+        "belief": "Ball control is essential for maintaining possession against defensive pressure."
+      },
+      {
+        "belief_id": "26_2",
+        "question_id": 26,
+        "belief": "Understanding angles is essential for effective dribbling against defenders."
+      }
+    ]
+  },
+  {
+    "cluster_id": 27,
+    "source_coarse_cluster_id": 8,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "12_0",
+        "question_id": 12,
+        "belief": "Ball handling becomes effective when it is automatic under distraction."
+      },
+      {
+        "belief_id": "13_0",
+        "question_id": 13,
+        "belief": "Effective ball handling relies on maintaining tight control under pressure."
+      }
+    ]
+  },
+  {
+    "cluster_id": 28,
+    "source_coarse_cluster_id": 8,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "15_1",
+        "question_id": 15,
+        "belief": "Weak-hand control is essential for effective dribbling and finishing."
+      }
+    ]
+  },
+  {
+    "cluster_id": 29,
+    "source_coarse_cluster_id": 8,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "21_2",
+        "question_id": 21,
+        "belief": "Good shooting and attacking angles are critical components of fundamental skills."
+      }
+    ]
+  },
+  {
+    "cluster_id": 30,
+    "source_coarse_cluster_id": 4,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "1_2",
+        "question_id": 1,
+        "belief": "Psychological factors can lead to mistakes when facing aggressive defenders."
+      },
+      {
+        "belief_id": "27_2",
+        "question_id": 27,
+        "belief": "Fear and mental barriers can hinder performance in competitive situations."
+      }
+    ]
+  },
+  {
+    "cluster_id": 31,
+    "source_coarse_cluster_id": 4,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "6_0",
+        "question_id": 6,
+        "belief": "Mental strength is crucial for translating practice into game performance."
+      },
+      {
+        "belief_id": "6_2",
+        "question_id": 6,
+        "belief": "The mental approach to the game significantly impacts overall improvement."
+      }
+    ]
+  },
+  {
+    "cluster_id": 32,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "6_1",
+        "question_id": 6,
+        "belief": "Fear and psychological barriers can prevent players from applying learned skills."
+      }
+    ]
+  },
+  {
+    "cluster_id": 33,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "22_0",
+        "question_id": 22,
+        "belief": "Fear of failure can diminish a player's confidence despite their skills."
+      }
+    ]
+  },
+  {
+    "cluster_id": 34,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "22_1",
+        "question_id": 22,
+        "belief": "Mental preparation routines can enhance performance confidence."
+      }
+    ]
+  },
+  {
+    "cluster_id": 35,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "22_2",
+        "question_id": 22,
+        "belief": "Negative self-talk or external criticism can impact a player's psychological state."
+      }
+    ]
+  },
+  {
+    "cluster_id": 36,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "30_1",
+        "question_id": 30,
+        "belief": "Players often neglect the mental aspect of the game in their development."
+      }
+    ]
+  },
+  {
+    "cluster_id": 37,
+    "source_coarse_cluster_id": 4,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "30_2",
+        "question_id": 30,
+        "belief": "Competing against elite players demands a strong mental game."
+      }
+    ]
+  },
+  {
+    "cluster_id": 38,
+    "source_coarse_cluster_id": 1,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "8_1",
+        "question_id": 8,
+        "belief": "A well-rounded skill set compounds over time for overall improvement."
+      },
+      {
+        "belief_id": "8_2",
+        "question_id": 8,
+        "belief": "Focusing on multiple areas prevents skill stagnation and promotes versatility."
+      },
+      {
+        "belief_id": "16_2",
+        "question_id": 16,
+        "belief": "Exclusively practicing one method limits overall skill development."
+      }
+    ]
+  },
+  {
+    "cluster_id": 39,
+    "source_coarse_cluster_id": 1,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "12_1",
+        "question_id": 12,
+        "belief": "Practicing with multiple objects improves focus on other game elements."
+      },
+      {
+        "belief_id": "12_2",
+        "question_id": 12,
+        "belief": "Drills that require divided attention help integrate skills into gameplay."
+      }
+    ]
+  },
+  {
+    "cluster_id": 40,
+    "source_coarse_cluster_id": 1,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "29_0",
+        "question_id": 29,
+        "belief": "Improvement requires dedicated hours of practice across multiple skill areas."
+      },
+      {
+        "belief_id": "29_2",
+        "question_id": 29,
+        "belief": "Technical skills must be practiced consistently to develop proficiency."
+      }
+    ]
+  },
+  {
+    "cluster_id": 41,
+    "source_coarse_cluster_id": 1,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "8_0",
+        "question_id": 8,
+        "belief": "Dividing practice time into focused segments enhances skill development."
+      }
+    ]
+  },
+  {
+    "cluster_id": 42,
+    "source_coarse_cluster_id": 1,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "17_1",
+        "question_id": 17,
+        "belief": "Diverse drills can hinder skill development by spreading focus too thin."
+      }
+    ]
+  },
+  {
+    "cluster_id": 43,
+    "source_coarse_cluster_id": 0,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "2_0",
+        "question_id": 2,
+        "belief": "Shooting accuracy depends on proper catching technique."
+      },
+      {
+        "belief_id": "2_1",
+        "question_id": 2,
+        "belief": "Rushing the shot disrupts timing and leads to inconsistency."
+      },
+      {
+        "belief_id": "2_2",
+        "question_id": 2,
+        "belief": "A stable shooting stance is essential for effective shot execution."
+      }
+    ]
+  },
+  {
+    "cluster_id": 44,
+    "source_coarse_cluster_id": 7,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "3_0",
+        "question_id": 3,
+        "belief": "Players need to practice finishing on both sides to build confidence."
+      },
+      {
+        "belief_id": "3_2",
+        "question_id": 3,
+        "belief": "Drills that emphasize both hands improve scoring ability around the rim."
+      },
+      {
+        "belief_id": "4_1",
+        "question_id": 4,
+        "belief": "Aggressive finishing techniques increase the chances of scoring at the rim."
+      }
+    ]
+  },
+  {
+    "cluster_id": 45,
+    "source_coarse_cluster_id": 5,
+    "size": 3,
+    "beliefs": [
+      {
+        "belief_id": "3_1",
+        "question_id": 3,
+        "belief": "Inadequate exposure to non-dominant side layups leads to performance issues."
+      },
+      {
+        "belief_id": "15_0",
+        "question_id": 15,
+        "belief": "Young players often struggle with their non-dominant hand, creating a significant weakness."
+      },
+      {
+        "belief_id": "28_2",
+        "question_id": 28,
+        "belief": "Failing to practice at the right intensity limits player development."
+      }
+    ]
+  },
+  {
+    "cluster_id": 46,
+    "source_coarse_cluster_id": 12,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "4_0",
+        "question_id": 4,
+        "belief": "Players must be aware of help defenders to avoid getting blocked."
+      },
+      {
+        "belief_id": "25_1",
+        "question_id": 25,
+        "belief": "Players must anticipate defensive adjustments and have counter moves ready."
+      }
+    ]
+  },
+  {
+    "cluster_id": 47,
+    "source_coarse_cluster_id": 13,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "5_1",
+        "question_id": 5,
+        "belief": "Dribbling with head up enhances awareness and decision-making."
+      },
+      {
+        "belief_id": "29_1",
+        "question_id": 29,
+        "belief": "Athleticism enhances decision-making and performance during games."
+      }
+    ]
+  },
+  {
+    "cluster_id": 48,
+    "source_coarse_cluster_id": 18,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "20_0",
+        "question_id": 20,
+        "belief": "Technical skills are essential for maximizing athletic potential."
+      },
+      {
+        "belief_id": "20_2",
+        "question_id": 20,
+        "belief": "Athleticism alone cannot compensate for poor technical fundamentals."
+      }
+    ]
+  },
+  {
+    "cluster_id": 49,
+    "source_coarse_cluster_id": 10,
+    "size": 2,
+    "beliefs": [
+      {
+        "belief_id": "27_0",
+        "question_id": 27,
+        "belief": "Game performance is affected by the speed and intensity of competition."
+      },
+      {
+        "belief_id": "27_1",
+        "question_id": 27,
+        "belief": "Players may rush their actions when faced with game-speed pressure."
+      }
+    ]
+  },
+  {
+    "cluster_id": 50,
+    "source_coarse_cluster_id": 16,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "10_1",
+        "question_id": 10,
+        "belief": "Fundamentals remain essential regardless of the appeal of advanced moves."
+      }
+    ]
+  },
+  {
+    "cluster_id": 51,
+    "source_coarse_cluster_id": 15,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "11_1",
+        "question_id": 11,
+        "belief": "Fast twitch muscle fibers enhance a player's ability to accelerate quickly."
+      }
+    ]
+  },
+  {
+    "cluster_id": 52,
+    "source_coarse_cluster_id": 14,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "13_1",
+        "question_id": 13,
+        "belief": "Speed in dribbling develops naturally after achieving control."
+      }
+    ]
+  },
+  {
+    "cluster_id": 53,
+    "source_coarse_cluster_id": 17,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "13_2",
+        "question_id": 13,
+        "belief": "Players can create impactful plays with slower, controlled movements."
+      }
+    ]
+  },
+  {
+    "cluster_id": 54,
+    "source_coarse_cluster_id": 11,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "24_1",
+        "question_id": 24,
+        "belief": "The lead foot position reveals the best angle for attack."
+      }
+    ]
+  },
+  {
+    "cluster_id": 55,
+    "source_coarse_cluster_id": 9,
+    "size": 1,
+    "beliefs": [
+      {
+        "belief_id": "30_0",
+        "question_id": 30,
+        "belief": "High-level performance requires a delusional level of self-confidence."
+      }
+    ]
+  }
+]

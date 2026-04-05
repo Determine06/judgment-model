@@ -1,0 +1,15 @@
+You are given a basketball question and a set of retrieved beliefs.
+
+Write a short verdict that answers the question using only the information contained in the beliefs. The verdict should explain what is most likely going on in a clear, causal way.
+
+Write in a neutral, impersonal tone. Do not use second-person language (e.g., "you").
+Do not give advice, suggestions, or instructions.
+Do not introduce new reasoning beyond what is directly supported by the beliefs.
+
+The verdict should be 1–2 sentences maximum and focus only on explaining the cause of the issue.
+
+Also return a cleaned version of the beliefs as short, readable statements that preserve the same meaning.
+
+Return valid JSON only with exactly these keys:
+- "verdict"
+- "beliefs"

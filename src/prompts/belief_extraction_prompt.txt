@@ -1,0 +1,226 @@
+You extract structured judgment signals from raw question-answer pairs.
+
+Your task is to read:
+1. a question
+2. a raw spoken-style answer
+
+and return:
+- one verdict
+- 2 to 4 canonical beliefs that support that verdict
+
+You are NOT summarizing the answer generally.
+You are extracting the underlying judgment.
+
+-----------------------------------
+DEFINITIONS
+-----------------------------------
+
+Verdict:
+The single main conclusion of the answer.
+It should be concise, declarative, and capture the actual final judgment.
+
+Canonical belief:
+A reusable principle, causal judgment, evaluative rule, or development principle that helps explain why the verdict is true.
+
+A canonical belief should be:
+- general enough to recur across multiple answers
+- faithful to the answer
+- written as a clean declarative sentence
+- focused on one idea only
+
+-----------------------------------
+WHAT TO EXTRACT
+-----------------------------------
+
+Extract exactly:
+- 1 verdict
+- 2 to 4 canonical beliefs
+Prefer 3 beliefs when possible.
+
+-----------------------------------
+VERDICT RULES
+-----------------------------------
+
+The verdict must:
+- be one short sentence
+- directly reflect the answer's conclusion
+- not be a copy of the question
+- not contain unnecessary question details
+- not be vague or generic
+- not include filler like "I think" or "probably" unless the answer is genuinely uncertain
+
+Good verdict style:
+- "The real issue is weak game-speed ball control."
+- "Shooting should be the first priority."
+- "Weak-hand control matters more early on."
+- "The missing factor is the mental side of the game."
+
+Bad verdict style:
+- "The answer is that the player should focus on the thing discussed in the question."
+- "Basketball improvement depends on many things."
+- "He thinks that maybe confidence could matter."
+
+-----------------------------------
+CANONICAL BELIEF RULES
+-----------------------------------
+
+Each canonical belief must:
+- express one main idea only
+- support the verdict
+- be more reusable than the raw wording
+- retain the key constraint, mechanism, or tradeoff from the answer
+- preserve the speaker's meaning
+- avoid rhetorical filler
+- avoid direct restatement of the verdict
+- avoid examples unless the example itself is the principle
+- avoid copying the question wording
+
+Canonical beliefs should usually look like:
+- "Game skills must transfer under real speed and pressure."
+- "Tight control matters more than flashy ball handling."
+- "Confidence affects whether practiced skills appear in games."
+- "Fundamentals create more long-term value than advanced moves early."
+- "Explosiveness and footwork matter more for separation than dribble volume."
+- "Shooting is the easiest scalable scoring skill for smaller players."
+
+-----------------------------------
+BELIEF QUALITY REQUIREMENTS
+-----------------------------------
+
+Canonical beliefs should capture decision-making logic, not just general truths.
+
+Prefer beliefs that:
+- express a tradeoff (X matters more than Y)
+- express a condition (X fails when Y happens)
+- express a mechanism (X leads to Y because Z)
+- express a constraint (X only works if Y)
+
+Avoid beliefs that are obvious or surface-level outcomes.
+
+Bad belief:
+- "Effective shooting leads to more points."
+
+Better belief:
+- "Shooting creates scalable scoring because it does not depend on dribble creation."
+
+Bad belief:
+- "Ball control is important."
+
+Better belief:
+- "Ball control must hold up under defensive pressure to be usable in games."
+
+-----------------------------------
+DO NOT EXTRACT
+-----------------------------------
+
+Do NOT output:
+- anecdotes
+- named-player examples unless absolutely required
+- motivational filler
+- surface evidence
+- repeated paraphrases of the same idea
+- direct copies of the raw answer
+- beliefs that are not actually present in the answer
+- generic statements that could apply to anything
+
+Do NOT turn these into beliefs:
+- "Luka does not dribble fast."
+- "Kyrie Irving uses flashy moves."
+- "Read this mental toughness book."
+
+Instead extract the underlying principle:
+- "Tight control matters more than dribble speed."
+- "A move is valuable only if it creates game impact."
+- "Mental strength affects game performance."
+
+-----------------------------------
+IMPORTANT DISTINCTIONS
+-----------------------------------
+
+A belief is a reusable principle, not just a detail.
+
+If the answer gives a drill, try to extract the principle behind the drill unless the drill itself is clearly the core answer.
+
+Example:
+Raw answer: "Use Mikan drills."
+Better belief:
+- "Weak-hand and opposite-side finishing improve through deliberate two-hand repetition."
+
+Raw answer: "Use two balls or a tennis ball."
+Better belief:
+- "Ball handling improves when dribbling becomes automatic under divided attention."
+
+-----------------------------------
+DEPTH VS GENERICITY
+-----------------------------------
+
+If a belief becomes too generic, rewrite it to include:
+- a condition
+- a tradeoff
+- or a mechanism
+
+Always prefer a slightly more specific belief over a generic one.
+
+Example:
+Generic:
+- "Confidence affects performance."
+
+Better:
+- "Lack of confidence prevents players from applying practiced skills in games."
+
+-----------------------------------
+ANTI-GENERIC RULE
+-----------------------------------
+
+Before outputting beliefs, check:
+
+Could this belief apply to almost any situation in basketball?
+
+If yes, rewrite it to be more specific to the reasoning in the answer.
+
+-----------------------------------
+STYLE RULES
+-----------------------------------
+
+All output text must be:
+- concise
+- clean
+- declarative
+- faithful to the answer
+- free of markdown
+- free of commentary
+
+Do not explain your choices.
+Do not include any text outside the JSON.
+
+-----------------------------------
+OUTPUT FORMAT
+-----------------------------------
+
+Return strict JSON with exactly these keys:
+
+{
+  "verdict": "string",
+  "canonical_beliefs": [
+    "string",
+    "string"
+  ]
+}
+
+Rules:
+- canonical_beliefs must contain 2 to 4 strings
+- prefer 3 when possible
+- no duplicate beliefs
+- no empty strings
+- no extra keys
+- no markdown code fences
+
+-----------------------------------
+INPUT
+-----------------------------------
+
+Question:
+{{question}}
+
+Raw Answer:
+{{raw_answer}}
