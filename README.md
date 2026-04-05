@@ -63,9 +63,8 @@ Key Idea
 - Instead of storing full answers, the system builds a compressed belief space that represents how the individual reasons across scenarios.
 
 Metrics Used (Build Validation)
-
-Cluster Cohesion (Embedding Similarity): Measures intra-cluster semantic similarity
-NLI Entailment Rate: % of belief pairs within a cluster that entail each other
-Contradiction Rate (NLI): % of belief pairs that contradict (target: low)
-Mean NLI Score (Soft Consistency): For a cluster with beliefs b1, b2, ..., bn, we compute:
+- Cluster Cohesion (Embedding Similarity): Measures intra-cluster semantic similarity
+- NLI Entailment Rate: % of belief pairs within a cluster that entail each other
+- Contradiction Rate (NLI): % of belief pairs that contradict (target: low)
+- Mean NLI Score (Soft Consistency): For a cluster with beliefs b1, b2, ..., bn, we compute:
 	Mean NLI = (1 / (n * (n - 1))) * Σ_{i ≠ j} P_entail(b_i, b_j)
