@@ -65,8 +65,8 @@ Metrics Used (Build Validation)
 - Cluster Cohesion (Embedding Similarity): Measures intra-cluster semantic similarity
 - NLI Entailment Rate: % of belief pairs within a cluster that entail each other
 - Contradiction Rate (NLI): % of belief pairs that contradict (target: low)
-- - **Mean NLI Score (Soft Consistency)**: For a cluster with beliefs b1, b2, ..., bn, we compute the average pairwise entailment across all belief pairs:
+- Mean NLI Score (Soft Consistency): For a cluster with beliefs b1, b2, ..., bn, we compute the average pairwise entailment across all belief pairs:
 
-  ![Mean NLI](your_image_link_here)
-
+    ![Mean NLI](https://latex.codecogs.com/png.latex?\frac{1}{n(n-1)}\sum_{i\ne%20j}P_{entail}(b_i,b_j))
+    
   where P_entail(b_i, b_j) is the entailment probability between two beliefs as predicted by the NLI model.
