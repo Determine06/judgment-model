@@ -1,14 +1,20 @@
 # Judgment Model Pipeline (POC)
 
 ## Overview
-- Proof-of-concept pipeline that turns a raw Q&A text file into artifacts used for judgment-style inference.
-- The build step parses a dataset, performs belief extraction, clusters those beliefs, and builds a belief map and persona spec.
-- The inference step retrieves relevant beliefs for a new question, generates a verdict with reasons (reasoning replication), and produces a mimic answer.
-- Key components include belief extraction, clustering, reasoning replication, and mimic generation using LLM APIs.
+This project is a proof-of-concept system for replicating human evaluative judgment.
+
+It reconstructs how a person reasons about problems by:
+- extracting belief primitives
+- clustering them into a reasoning space
+- retrieving relevant beliefs for new scenarios
+- generating verdicts and explanations
+- rendering answers in a consistent persona
+
+Inspired by Delphi AI.
 
 ## Pipeline
 Data.txt → dataset → beliefs → clusters → belief_map  
-→ inference → verdict + reasons → mimic answer
+inference → verdict + reasons → mimic answer
 
 ## Project Structure
 - src/build → preprocessing/build pipeline that parses the dataset, extracts beliefs, clusters them, and builds the belief map/persona
@@ -38,7 +44,7 @@ Data.txt → dataset → beliefs → clusters → belief_map
       reasons: [..., ..., ...],
       mimic_answer: ...
     }
-
+    
 ## Notes
 - Not production optimized
 - Designed as research + system POC
