@@ -70,3 +70,45 @@ Metrics Used (Build Validation)
     ![Mean NLI](https://latex.codecogs.com/png.latex?\frac{1}{n(n-1)}\sum_{i\ne%20j}P_{entail}(b_i,b_j))
     
   where P_entail(b_i, b_j) is the entailment probability between two beliefs as predicted by the NLI model.
+
+## Inference (Runtime)
+
+This phase reconstructs reasoning for a new, unseen question.
+
+Process
+- Embed incoming question
+- Retrieve top-K relevant beliefs from belief_map.json
+-     similarity-based retrieval (embedding distance)
+-     cluster-aware filtering to reduce redundancy
+- Pass retrieved beliefs into an LLM to generate:
+-     verdict (core judgment)
+-     reasons (structured supporting beliefs)
+- Feed verdict + reasons into a mimic renderer to produce a natural response consistent with the learned persona
+  
+Retrieval Strategy
+- Rank beliefs by similarity to the input question
+- Select top beliefs across distinct clusters to ensure diversity
+- Optionally include secondary beliefs if they pass a similarity threshold (Δ from top score)
+- Avoid over-representing any single cluster
+
+## Implications & Conclusion
+
+This POC shows that reasoning replication is possible to a meaningful degree using only LLMs, prompt engineering, and retrieval over structured belief representations. Even with a small dataset and no fine-tuning, the system was able to reconstruct consistent verdicts and supporting reasoning across unseen scenarios.
+
+At a high level, this suggests that opinion itself is compressible. Instead of memorizing answers, the model can operate over a learned belief space and recombine those beliefs to form new judgments. In other words, we’re not just mimicking outputs — we’re approximating the underlying decision process.
+
+This is early evidence that commoditizing opinion is feasible. If a system can reliably reconstruct how someone evaluates situations, then their judgment can be externalized, queried, and scaled.
+
+However, this implementation still relies on explicit belief extraction + retrieval. The longer-term direction is to move away from manually defined belief units and toward models that implicitly learn latent beliefs, internal representations of how a person weighs tradeoffs, priorities, and causal relationships.
+
+Recent work in reasoning and representation learning is already pointing in this direction. New architectures and training paradigms are starting to enable:
+- more structured reasoning over latent spaces
+- better generalization across unseen scenarios
+- internalization of abstract decision patterns rather than surface text
+
+This project should be viewed as a transitional system:
+
+current approach → explicit belief mapping + RAG
+future approach → latent belief learning within the model itself
+
+The goal is not just to retrieve the right beliefs, but to learn them end-to-end.
