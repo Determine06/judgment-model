@@ -45,7 +45,31 @@ inference → verdict + reasons → mimic answer
       mimic_answer: ...
     }
     
-## Notes
-- Not production optimized
-- Designed as research + system POC
+## Architecture Generation (Build Phase)
+
+This phase constructs the internal reasoning space from raw Q&A data.
+
+Process
+- Parse raw Q&A dataset into structured format
+- Extract belief primitives from each answer using an LLM
+- Generate embeddings for each belief (optionally conditioned on question context)
+- Perform hierarchical clustering to group semantically similar beliefs
+- Apply NLI-based refinement within clusters to reduce contradictions and improve coherence
+- Construct a belief_map.json linking:
+-     cluster → beliefs → source questions
+- Generate a persona_spec.json capturing consistent response patterns (structure, tone, reasoning style)
+
+Key Idea
+- Instead of storing full answers, the system builds a compressed belief space that represents how the individual reasons across scenarios.
+
+Metrics Used (Build Validation)
+
+Cluster Cohesion (Embedding Similarity)
+    Measures intra-cluster semantic similarity
+NLI Entailment Rate
+    % of belief pairs within a cluster that entail each other
+Contradiction Rate (NLI)
+    % of belief pairs that contradict (target: low)
+Mean NLI Score (Soft Consistency)
+    For a cluster with beliefs b
 
