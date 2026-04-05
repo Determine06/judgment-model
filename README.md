@@ -56,7 +56,7 @@ Process
 - Perform hierarchical clustering to group semantically similar beliefs
 - Apply NLI-based refinement within clusters to reduce contradictions and improve coherence
 - Construct a belief_map.json linking:
--     cluster → beliefs → source questions
+    cluster → beliefs → source questions
 - Generate a persona_spec.json capturing consistent response patterns (structure, tone, reasoning style)
 
 Key Idea
@@ -64,12 +64,68 @@ Key Idea
 
 Metrics Used (Build Validation)
 
-Cluster Cohesion (Embedding Similarity)
-    Measures intra-cluster semantic similarity
-NLI Entailment Rate
-    % of belief pairs within a cluster that entail each other
-Contradiction Rate (NLI)
-    % of belief pairs that contradict (target: low)
+Cluster Cohesion (Embedding Similarity): Measures intra-cluster semantic similarity
+NLI Entailment Rate: % of belief pairs within a cluster that entail each other
+Contradiction Rate (NLI): % of belief pairs that contradict (target: low)
 Mean NLI Score (Soft Consistency)
-    For a cluster with beliefs b
 
+For a cluster with beliefs b1, b2, ..., bn, we compute:
+
+𝑀
+𝑒
+𝑎
+𝑛
+ 
+𝑁
+𝐿
+𝐼
+=
+1
+𝑛
+(
+𝑛
+−
+1
+)
+∑
+𝑖
+≠
+𝑗
+𝑃
+𝑒
+𝑛
+𝑡
+𝑎
+𝑖
+𝑙
+(
+𝑏
+𝑖
+,
+𝑏
+𝑗
+)
+Mean NLI=
+n(n−1)
+1
+	​
+
+i
+
+=j
+∑
+	​
+
+P
+entail
+	​
+
+(b
+i
+	​
+
+,b
+j
+	​
+
+)
