@@ -1,4 +1,4 @@
-# Judgment Model Pipeline (POC)
+# Judgment Model Pipeline 
 
 ## Overview
 This project is a proof-of-concept system for replicating human evaluative judgment.
