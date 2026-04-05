@@ -77,12 +77,8 @@ This phase reconstructs reasoning for a new, unseen question.
 
 Process
 - Embed incoming question
-- Retrieve top-K relevant beliefs from belief_map.json
--     similarity-based retrieval (embedding distance)
--     cluster-aware filtering to reduce redundancy
-- Pass retrieved beliefs into an LLM to generate:
--     verdict (core judgment)
--     reasons (structured supporting beliefs)
+- Retrieve top-K relevant beliefs from belief_map.json -> similarity-based retrieval (embedding distance) + cluster-aware filtering to reduce redundancy
+- Pass retrieved beliefs into an LLM to generate: verdict (core judgment) + reasons (structured supporting beliefs)
 - Feed verdict + reasons into a mimic renderer to produce a natural response consistent with the learned persona
   
 Retrieval Strategy
