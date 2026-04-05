@@ -59,8 +59,7 @@ Process
     cluster → beliefs → source questions
 - Generate a persona_spec.json capturing consistent response patterns (structure, tone, reasoning style)
 
-Key Idea
-- Instead of storing full answers, the system builds a compressed belief space that represents how the individual reasons across scenarios.
+Key Idea: Instead of storing full answers, the system builds a compressed belief space that represents how the individual reasons across scenarios.
 
 Metrics Used (Build Validation)
 - Cluster Cohesion (Embedding Similarity): Measures intra-cluster semantic similarity
