@@ -66,4 +66,5 @@ Metrics Used (Build Validation)
 - NLI Entailment Rate: % of belief pairs within a cluster that entail each other
 - Contradiction Rate (NLI): % of belief pairs that contradict (target: low)
 - Mean NLI Score (Soft Consistency): For a cluster with beliefs b1, b2, ..., bn, we compute:
-	Mean NLI = (1 / (n * (n - 1))) * Σ_{i ≠ j} P_entail(b_i, b_j)
+  
+![Mean NLI](https://latex.codecogs.com/png.latex?\frac{1}{n(n-1)}\sum_{i\ne%20j}P_{entail}(b_i,b_j))
